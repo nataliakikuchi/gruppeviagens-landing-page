@@ -1,0 +1,195 @@
+VISUAL STUDIO CODE
+
+Atalho para indentar o código: alt+shift+F
+
+CSS TRICKS
+
+
+
+SELETOR {
+	PROPRIEDADE: VALOR
+}
+
+w3schools - CSS Selector Reference
+flexboxfroggy.com
+
+chamando as classes: para chamar uma classe colocar ponto e o nome da classe
+
+.header ou div.header = mesma coisa
+
+.xxxxx = tudo o que tem ponto alguma coisa é uma classe
+
+id  = como se fosse uma classe, mas não pode se repetir
+
+* = pega o código todo (mesma fonte, mesma cor)
+
+sem o ponto é uma tag ex.: p
+
+div, p, .intro = com vírgula seleciona todas as div, todos os p e a classe intro
+
+div p = todos os p dentro da div
+
+div > p = pega os p filhos diretos da div
+
+div + p = pega os p irmãos da div que vem imediatamente abaixo (se estiver duas linhas abaixo não pega)
+
+div ~ p = pega os p irmãos que vem imediatamente acima (na mesma linha)
+
+a navegação estruturalmente fica fora do HEADER
+
+display: inline um elemento ao lado do outro na mesma linha. Não considera unidades de tamanho
+
+display: block um elemento abaixo do outro
+
+display: inline-block considera unidades de tamanho
+
+display: flex; com esse display conseguimos mover elementos com mais facilidade, centralizar, por exemplo
+só conseguimos usar a propriedade justify-content com o display flex. Ele coloca blocos, um ao lado do outro
+
+
+padding: espaçamento interior do elemento
+margin: afasta os elem entos
+
+position: fixed; manda o elemento para outro plano, normalmente na barra superior de navegação. A deixa congelada
+
+
+background ou background-image: url(../img/caminhodaimagem); = colocar uma imagem no fundo da página
+Se colocarmos uma imagem pequena aqui, por padrão, ela se repete. Se não quisermos repetir, temos que colocar a propriedade
+
+BACKGROUND-REPEAT: com o valor NO-REPEAT
+
+background-position= posiciona a imagemvh onde queremos (eixo Y vertical de cima para baixo e eixo X horizontal da esquerda para a direita) 
+
+background-size: VALOR COVER = pega o tamanho máximo da largura da tela e ajusta a altura. Se ajusta a partir da largura.
+Se tirarmos ele deixa de ajustar a imagem e passa a corta-la
+
+min-height= especifica a altura mínima do elemento | valor VH=viewport height (navegador/tela) 100vh= 100% da altura da tela
+
+PX = valor absoluto, estático
+
+para tirar todas as linhas sublinhadas das palavras link: 
+a:link {
+text-decoration: none;
+}
+
+link para e-mail: <a href="mailto:contato@gruppe.com.br"
+
+para deixar botões com outra cor diferente da fonte (piscar em outra cor)
+criar uma pseudo classe
+header a:hover {
+ background color:
+ color:
+}
+
+header a:active {
+}
+
+header a: focus {
+}
+header a: visited {
+}
+
+TEMPO PARA TRANSIÇÃO ENTRE AS CORES DO BOTÃO
+transitionn: 1s (tempo) all; (é preciso colocar isso na pseduo classe e na classe principal)
+ 
+
+
+
+HMTL
+
+SEMPRE ABRIMOS O HTML COM 4 GRANDES TAGS
+DOCTYPE
+HTML
+HEAD - chamamos links externos. Ex.: fonte do Google Fonts antes de chamar o CSS
+BODY
+
+
+FORMAS DE CHAMAR O CSS NO HTML
+
+LINK EM <HEAD> - forma externa
+
+forma interna
+EM <HEAD> 
+<style>
+p {
+ color:red;
+}
+
+e inline
+<p style="p {color:red;}">
+
+Quando uma section tem um ponto . devemos ler o ponto como uma classe
+Ex.: section.sobre = section class="sobre"
+
+CRIANDO BARRA DE NAVEGAÇÃO - PODEMOS FAZER POR FLOAT E POR DISPLAY FLEX
+
+O DISPLAY DE <h1> e <p> É BLOCK
+
+O atributo fica dentro da tag e entre "" colocamos o valor do atributo
+
+alt= na imagem serve como recurso de acessibilidade, para leitura e caso a imagem quebre, aparece o que escrevemos lá
+
+<div> divide blocos de conteúdos = block
+<span> separa/destaca conteúdo. Conseguimos manipular textos = inline
+
+<table> para inserir tabela
+<tr> table row para inserir linhas na tabela
+<td> table data para inserir conteúdo
+
+<br> NÃO TEM FECHAMENTO break para quebrar linha em texto. Não é muito recomendado, pois quebra diferente em cada navegador e fica estranho
+Entre um ponto e outro podemos usar <br> mas para manipular linhas no meio do texto é melhor WIDTH.
+
+PARA INSERIR FORMULÁRIO
+
+<form action-"" method="GET">
+	<label for="name">Nome</label>
+	<input type="text" name="name"
+	placeholder="Digite seu nome aqui" required>
+
+BOTÃO ENVIAR
+
+<input type="submit"value="Enviar">
+
+tag textarea rows="5" cols="4" define o tamanho (em linhas e colunas) da caixa de texto input
+
+HTML SEMÂNTICO - TAGS SEMÂNTICAS
+Nasceu com o html 5 para facilitar a nossa leitura e a leitura das máquinas
+
+
+
+SITE WAVE wava.webaim.org - Para verificar a acessibilidade dos sites
+
+html
+	head
+	body
+		nav
+		head
+		main
+			section
+				article
+
+
+
+<head> para chamar links
+
+<strong> deixa o texto negrito
+
+<em> dá ênfase ao texto e o deixa em itálico
+
+<nav> navegação do site
+
+<header> título e subtítulo (o que os sites de busca consideram)
+
+<main> conteúdo
+
+<section> É um tipo de <div> e introduz um tipo específico de conteúdo. Ex.: serviços, conheça
+	section.conteudo
+	section.contato
+	section.vagas
+
+<article> mais específico que a section
+
+<aside> informação auxiliar/complemento do conteúdo principal - pode ser a side bar (apêndice)
+
+<footer>
+
