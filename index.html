@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>Gruppe Viagens</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,7 +18,7 @@
         </div>
 
         <div class="menu">
-            <ul>
+            <ul class="listitensmenu">
                 <li>
                     <a href="#">Sobre</a>
                 </li>
@@ -44,7 +45,7 @@
                 <br> Já sabe para onde vai? Nós também criamos roteiros personalizados, selecionando os pontos turísticos e restaurantes
                 mais apropriados para você.</p>
 
-            <a href="#">Experimentar agora</a>
+            <button id= "firstbutton" <a href="#">Experimente agora</a> </button>
         </div>
     </header>
     <main>
@@ -62,22 +63,22 @@
 
         <section class="passo-a-passo">
                 <h2>Entendi! E como funciona??????</h2>
-            <div>
-                <div>
+            <div class="passos">
+                <div class="passo1">
                     <img src="img/passo01.png" alt="Silhueta de uma ilustração de uma pessoa nadando">
                     <p>
                         <strong>Você nos diz quem é!</strong>
                         <br> Se gosta de aventura, se está viajando à trabalho, quanto tem para gastar etc.</p>
                 </div>
 
-                <div>
+                <div class="passo2">
                     <img src="img/passo-02.png" alt="ilustração de um mapa em papel com um pin de localização vermelho">
                     <p>
-                        <strong>Montamos o melhor roteiro</strong>
-                        <br>que se encaixa com as suas especificações</p>
+                        <strong>Montamos o melhor roteiro!</strong>
+                        <br>Aquele que se encaixa com as suas especificações.</p>
                 </div>
 
-                <div>
+                <div class="passo3">
                     <img src="img/passo-03.png" alt="ilustração de uma mala de viagens amarela">
                     <p>
                         <strong>Aproveite sua viagem</strong>
@@ -91,18 +92,21 @@
                 <h2>Nossos serviços</h2>
             </div>
 
-            <div>
+            <div class="services">
+              <div class="service1">
                 <h3>Consultoria</h3>
                 <img src="img/servicos-consultoria.png" alt="pin de localização com um tique de correto">
                 <p>Não sabe para onde viajar? A consultoria visa selecionar os melhores destinos do Brasil e do mundo para a
                     sua próxima viagem.</p>
                 <a href="#">Saber mais</a>
-
+</div>
+<div class="service2">
                 <h3>Roteiro</h3>
                 <img src="img/servicos-roteiros.png" alt="ilustração de mala de viagens">
                 <p>Sua viagem está chegando, mas não sabe o que visitar e onde comer? Nós temos uma equipe de consultores apaixonada
                     por viagem. Sabemos como montar o roteiro para cada perfil de viajante.</p>
                 <a href="#">Saber mais</a>
+              </div>
             </div>
         </section>
 
@@ -110,17 +114,20 @@
             <div>
                 <h2>Você sabia que...</h2>
             </div>
-
-            <div>
-                <p>80%</p>
+<div class="curiosities">
+            <div class="number1">
+                <p class="curious">80%</p>
                 <p>É o que você economiza quando planeja uma viagem de antemão</p>
-
-                <p>50+</p>
+              </div>
+              <div class="number2">
+                <p class="curious">50+</p>
                 <p>Localidades diferentes nossos consultores conhecem no mundo inteiro</p>
-
-                <p>1000+</p>
+</div>
+<div class="number3">
+                <p class="curious">1000+</p>
                 <p>Brasileiros viajaram no ano de 2016</p>
             </div>
+          </div>
         </section>
 
         <section class="contato">
@@ -131,23 +138,36 @@
 
             <div>
                 <form action>
-                    <div>
+                    <div class="info">
+                      <div>
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" placeholder="Digite seu nome">
-                        <!--esse name em azul serve para chamar o código em outras linguagens, JavaScript, por exemplo -->
+                      </div><!--esse name em azul serve para chamar o código em outras linguagens, JavaScript, por exemplo -->
+                      <div>
+                        <label for="nome">Apelido</label>
+                        <input type="text" name="nome" placeholder="Digite seu apelido">
+                      </div>
                     </div>
-
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" placeholder="Digite seu email">
+                    <div class="info">
+                      <div>
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" placeholder="Digite seu e-mail">
+                      </div>
+                      <div>
+                        <label for="nome">Telefone</label>
+                        <input type="text" name="nome" placeholder="Digite seu telefone">
+                      </div>
                     </div>
+                  </div>
 
-                    <div>
+
+
+                    <div class="assunto">
                         <label for="assunto">Assunto</label>
                         <input type="text" name="assunto" placeholder="Digite um assunto">
                     </div>
 
-                    <div>
+                    <div class="message">
                         <label for "mensagem">Mensagem</label>
                         <input type="text" name="mensagem" placeholder="Digite uma mensagem">
                     </div>
@@ -213,6 +233,13 @@
             </div>
         </div>
     </footer>
+    <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="js/home.js" type="text/javascript"></script>
 </body>
 
 </html>

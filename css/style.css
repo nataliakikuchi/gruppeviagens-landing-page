@@ -3,7 +3,12 @@
 .topbar ul li {
     display: inline;
     text-decoration: none;
-    color: white; 
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu {
+  margin-top: 15px;
 }
 
 nav.topbar {
@@ -20,7 +25,7 @@ nav.topbar {
   a:link {
       text-decoration: none;
   }
-  
+
 header {
     min-height: 100vh;
     background: url(../img/bg-banner.png);
@@ -38,6 +43,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 
@@ -46,6 +52,40 @@ header {
     margin-left: 30px;
 }
 
+.desc-sobre h2 {
+  margin-bottom: 30px;
+}
+
+
+#firstbutton {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius:5px;
+  cursor: pointer;
+  font-size:24px;
+  margin: 30px 0 0 100px;
+}
+
+.passos {
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.passo1 {
+  max-width: 25%;
+  margin: 0 auto;
+}
+
+.passo2 {
+  max-width: 25%;
+  margin: 0 auto;
+}
+
+.passo3 {
+  max-width: 25%;
+  margin: 0 auto;
+}
 .passo-a-passo > div {
     display: flex;
     justify-content: center;
@@ -53,5 +93,85 @@ header {
 
 .passo-a-passo > h2 {
     text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 
+.servicos h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.service1 {
+  max-width: 36%;
+  margin: 0 auto;
+}
+
+.service2 {
+  max-width: 36%;
+  margin: 0 auto;
+}
+
+.curiosidades h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.curiosities{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+.number1 {
+  max-width: 25%;
+  margin: 0 auto;
+}
+
+.number2 {
+  max-width: 25%;
+  margin: 0 auto;
+}
+
+.number3 {
+  max-width: 25%;
+  margin: 0 auto;
+}
+
+.curious {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.contato h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.info {
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+.info label  {
+  display: block;
 }
